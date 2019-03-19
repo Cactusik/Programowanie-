@@ -30,9 +30,11 @@ def draw():
     
     if x > 100:
         stroke(*krotka_kolorow[1])
+        fill(200,250,255)
         
     if x > 180:
         stroke(*krotka_kolorow[2])
+        fill(0,190,200)
     
     if x > width/2:
         exit()
