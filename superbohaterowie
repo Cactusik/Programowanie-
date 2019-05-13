@@ -1,0 +1,43 @@
+class Superbohater():# wstęp do programowania obiektowego 
+    
+    def __init__(self, moc, tr, kostium):
+        self.supermoc = moc
+        self.tragedia = tr
+        self.stroj = kostium
+        self.pokonani_wrogowie = 0
+    
+    def pokonaj_wroga(self):
+        self.pokonani_wrogowie += 1
+        print("Wrog pokonany!")
+        return self.pokonani_wrogowie
+    
+    def zmien_stroj(self, kostium):
+        self.stroj = kostium
+        
+    def get_pokonani_wrogowie(self):
+        return self.pokonani_wrogowie
+        
+    def set_pokonani_wrogowie(self, ilosc):
+        self.pokonani_wrogowie = ilosc
+    
+def setup():
+    global Batman
+    global Spiderman
+    Batman = Superbohater("supersila", "trudne dziecinstwo", "ministranta")
+    Spiderman = Superbohater("sieci", "smierc wujka", "pajaka")
+    
+def draw():    
+    global Batman
+    global Spiderman
+    Batman.zmien_stroj("specjalny")
+    Batman.pokonaj_wroga()
+    Batman.zmien_stroj("codzienny")  # metody to funkcje to wywoływane ma obiektach klasy 
+    
+    
+    # programowanie obiektowe (wikipedia)
+    # obiekt(programowanie obiektowe)
+    # klasa (programowanie obiektowe)
+    # metoda (programowanie obiektowe)
+    # konstruktor
+    #inicjalizator 
+    
